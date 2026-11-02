@@ -1,0 +1,28 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" {{ if .IsHome }}aria-current="page"{{ end }}>
+      <img src="/img/steady-mark.png" alt="" width="36" height="36">
+      <span>Steady</span>
+    </a>
+    {{- $current := . }}
+    <nav class="nav-wide" aria-label="Main">
+      <ul>
+        {{- range site.Menus.main }}
+        <li><a href="{{ .URL }}" {{ if $current.IsMenuCurrent "main" . }}aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+      <a class="button button-small" href="#talk">Talk to us</a>
+    </nav>
+    <details class="menu">
+      <summary><span class="menu-icon" aria-hidden="true"></span>Menu</summary>
+      <nav aria-label="Main">
+        <ul>
+          {{- range site.Menus.main }}
+          <li><a href="{{ .URL }}" {{ if $current.IsMenuCurrent "main" . }}aria-current="page"{{ end }}>{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+        <a class="button button-small" href="#talk">Talk to us</a>
+      </nav>
+    </details>
+  </div>
+</header>

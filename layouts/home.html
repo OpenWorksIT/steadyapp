@@ -1,0 +1,127 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="wrap">
+    <h1 class="hero-title">Therapy is weekly.<br>Life is daily.</h1>
+    <p class="hero-lead">Steady is a calm app for the days between sessions. Patients check in and do the exercises their psychologist sends. Their psychologist sees how the fortnight went before they meet again.</p>
+    <p class="hero-actions">
+      <a class="button" href="/practices/">For practices</a>
+      <a class="button button-secondary" href="/patients/">I have an invite</a>
+    </p>
+  </div>
+  <div class="wrap-wide">{{ partial "fortnight.html" . }}</div>
+</section>
+
+<section class="section two-sides">
+  <div class="wrap">
+    <h2 class="section-title">One app, two ways in</h2>
+    <p class="section-lead">Patients and psychologists use the same app. What each person sees depends on how they sign in.</p>
+    <div class="sides">
+      <div class="side">
+        <figure class="phone"><img src="/img/screens/01-check-in.webp" alt="The patient check-in screen: four questions on a 1 to 5 scale and a box for a few words" width="560" height="1217" loading="lazy"></figure>
+        <div>
+          <h3>For patients</h3>
+          <ul class="ticks">
+            <li>Rate mood, anxiety, sleep and energy from 1 to 5, and add a few words if they want to.</li>
+            <li>Do the questionnaires and exercises their psychologist sends, like the PHQ-9 or box breathing.</li>
+            <li>Look back over their own check-ins for two weeks, a month or three months.</li>
+            <li>Share a daily summary from their watch, only if they turn it on.</li>
+          </ul>
+          <p><a href="/patients/">What patients need to know</a></p>
+        </div>
+      </div>
+      <div class="side">
+        <figure class="phone"><img src="/img/screens/06-patients.webp" alt="The psychologist's patient list, with each patient's last check-in, a mood line and any flags to review" width="560" height="1217" loading="lazy"></figure>
+        <div>
+          <h3>For psychologists</h3>
+          <ul class="ticks">
+            <li>See every patient at a glance, with anything worth a look at the top.</li>
+            <li>Send a questionnaire or exercise once, daily or weekly.</li>
+            <li>Get a notification when a patient checks in or finishes something. It never holds a name or health details.</li>
+            <li>Export to PDF or Excel for the clinical file.</li>
+          </ul>
+          <p><a href="/practices/">What practices get</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section how">
+  <div class="wrap">
+    <h2 class="section-title">How it starts</h2>
+    <ol class="steps">
+      <li><h3>Your practice gets its own server</h3><p>In South Africa, with your practice's name and logo in the app. OpenWorks IT sets it up and looks after it.</p></li>
+      <li><h3>You invite a patient</h3><p>They scan a QR code with their phone's camera, install Steady, and it connects to your server.</p></li>
+      <li><h3>They check in between sessions</h3><p>A few taps a day, plus whatever questionnaires or exercises you've sent.</p></li>
+      <li><h3>You read the fortnight</h3><p>Before the next session: the trend, their own words, the scores, and anything flagged for review.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section science-band">
+  <div class="wrap science-grid">
+    <div>
+      <h2 class="section-title">The science comes from clinicians</h2>
+      <p>The science and research behind Steady come from clinical psychologist Kempie van Rooyen and VR Clinical Psychology in Gqeberha. They sign off every questionnaire, exercise, score band and line of clinical wording. OpenWorks IT writes the code and develops Steady.</p>
+      <p>Flags, such as a PHQ-9 item 9 answer or three low check-ins in a row, are there for the psychologist to review. They aren't risk scores, and Steady doesn't diagnose.</p>
+      <p><a href="/science/">The science behind Steady</a></p>
+    </div>
+    <div class="instruments">
+      <h3>Built in</h3>
+      <ul class="chips">
+        <li>PHQ-9</li><li>GAD-7</li><li>PCL-5</li><li>WHO-5</li>
+      </ul>
+      <ul class="chips chips-soft">
+        <li>Box breathing</li><li>4-7-8 breathing</li><li>Slow paced breathing</li><li>5-4-3-2-1 grounding</li><li>Thought record</li>
+      </ul>
+      <p class="small">Psychologists can write their own, or import from the open ReproSchema library of more than 90 instruments. Nothing imported can be sent until the practice has confirmed its licence.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section community">
+  <div class="wrap community-grid">
+    <div>
+      <h2 class="section-title">A community of psychologists</h2>
+      <p class="section-lead">Every practice that uses Steady joins a private forum of psychologists, led by Kempie van Rooyen.</p>
+    </div>
+    <div>
+      <ul class="ticks">
+        <li>Talk about the science, and how check-ins and flags fit into therapy.</li>
+        <li>Build and test questionnaires and exercises together, then put them into Steady for everyone.</li>
+        <li>Plan studies across practices, sharing only totals and only with patients' consent.</li>
+        <li>Decide with OpenWorks IT what Steady does next.</li>
+      </ul>
+      <p>Invitation only, two-step sign-in for everyone, and no patient-identifying information, ever. OpenWorks IT sees the development area and, elsewhere, only how busy the forum is.</p>
+      <p><a href="/community/">About the community</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section trust">
+  <div class="wrap">
+    <h2 class="section-title">Your practice's own server</h2>
+    <p class="section-lead">Steady isn't one big database of everyone's patients. Each practice runs its own copy, in South Africa.</p>
+    <dl class="facts">
+      <div><dt>Notifications say only that there's something new</dt><dd>Names and health details stay inside the app, behind sign-in.</dd></div>
+      <div><dt>Every look is logged</dt><dd>Each time a psychologist opens a patient's information, it's written to an access log.</dd></div>
+      <div><dt>Two-step sign-in for staff</dt><dd>Psychologists and administrators sign in with a password and a code.</dd></div>
+      <div><dt>Only signed updates</dt><dd>Your server installs a new version only if OpenWorks IT has signed it.</dd></div>
+      <div><dt>Encrypted backups, every night</dt><dd>So a bad day on the server isn't a lost record.</dd></div>
+      <div><dt>No adverts, no tracking</dt><dd>Nobody's data is sold or shared for marketing. That's in the privacy policy, under POPIA.</dd></div>
+    </dl>
+    <p><a href="/security/">Privacy and security in detail</a></p>
+  </div>
+</section>
+
+<section class="section open">
+  <div class="wrap open-grid">
+    <h2 class="section-title">No licence fees</h2>
+    <div>
+      <p>Steady is free and open-source software under the GNU AGPL. Anyone can read the code, and a practice can run it on its own server if it wants to.</p>
+      <p>Most practices would rather not. OpenWorks IT charges one monthly fee per practice for hosting, updates, support and training. Not per patient, and not per psychologist.</p>
+      <p><a href="{{ site.Params.source }}">Read the code on GitHub</a></p>
+    </div>
+  </div>
+</section>
+{{ end }}

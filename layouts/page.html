@@ -1,0 +1,24 @@
+{{ define "main" }}
+<article class="page">
+  <header class="page-head wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+  <div class="wrap page-grid">
+    <div class="prose">
+      {{ .Content }}
+    </div>
+    {{- if gt (len .Fragments.Headings) 0 }}
+    <aside class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ul>
+        {{- range $h := .Fragments.Headings }}
+        {{- if eq $h.Level 2 }}<li><a href="#{{ $h.ID }}">{{ $h.Title | plainify }}</a></li>{{ end }}
+        {{- range $h.Headings }}{{ if eq .Level 2 }}<li><a href="#{{ .ID }}">{{ .Title | plainify }}</a></li>{{ end }}{{ end }}
+        {{- end }}
+      </ul>
+    </aside>
+    {{- end }}
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,8 @@
+{{- if or site.Params.appStore site.Params.googlePlay }}
+<p class="stores">
+  {{ with site.Params.appStore }}<a class="button" href="{{ . }}">Steady on the App Store</a>{{ end }}
+  {{ with site.Params.googlePlay }}<a class="button button-secondary" href="{{ . }}">Steady on Google Play</a>{{ end }}
+</p>
+{{- else }}
+<p class="note">Steady is on its way to the App Store and Google Play. Your practice's invite page has the right link for your phone.</p>
+{{- end }}

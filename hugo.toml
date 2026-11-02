@@ -1,0 +1,47 @@
+baseURL = "https://steadyapp.co.za/"
+languageCode = "en-ZA"
+title = "Steady"
+disableKinds = ["taxonomy", "term", "rss"]
+enableRobotsTXT = true
+
+[params]
+  description = "Steady is a calm app for the days between therapy sessions. Patients check in; their psychologist sees how the fortnight went. Built in South Africa, open source, on your practice's own server."
+  email = "info@openworks.co.za"
+  whatsapp = "https://wa.me/27767689155"
+  whatsappLabel = "+27 76 768 9155"
+  source = "https://github.com/OpenWorksIT/steady"
+  privacyPolicy = "https://www.openworks.co.za/steady/privacy/"
+  # fill in once the stores have approved Steady; the patients page shows the buttons then
+  appStore = ""
+  googlePlay = ""
+
+[[menus.main]]
+  name = "For practices"
+  pageRef = "/practices"
+  weight = 10
+[[menus.main]]
+  name = "For patients"
+  pageRef = "/patients"
+  weight = 20
+[[menus.main]]
+  name = "The science"
+  pageRef = "/science"
+  weight = 30
+[[menus.main]]
+  name = "Community"
+  pageRef = "/community"
+  weight = 35
+[[menus.main]]
+  name = "Privacy and security"
+  pageRef = "/security"
+  weight = 40
+[[menus.main]]
+  name = "Our story"
+  pageRef = "/story"
+  weight = 50
+
+[markup.goldmark.renderer]
+  unsafe = false
+
+[minify]
+  minifyOutput = true

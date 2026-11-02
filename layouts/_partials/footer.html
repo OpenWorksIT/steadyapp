@@ -1,0 +1,49 @@
+{{- if not (eq .Params.cta false) }}
+<section class="talk" id="talk">
+  <div class="wrap talk-inner">
+    <div>
+      <h2>Bring Steady to your practice</h2>
+      <p>Tell us a little about your practice. We'll show you Steady on a demo practice, answer your questions and talk you through setup.</p>
+    </div>
+    <div class="talk-actions">
+      <a class="button button-light" href="mailto:{{ site.Params.email }}?subject=Steady%20for%20my%20practice">Email {{ site.Params.email }}</a>
+      <a class="button button-ghost" href="{{ site.Params.whatsapp }}">WhatsApp {{ site.Params.whatsappLabel }}</a>
+    </div>
+  </div>
+</section>
+{{- end }}
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-about">
+      <a class="brand brand-footer" href="/"><img src="/img/steady-mark.png" alt="" width="32" height="32"><span>Steady</span></a>
+      <p>Check-ins between therapy sessions, made in Gqeberha.</p>
+      <p class="credit">Science and research: <a href="/story/#credits">Kempie van Rooyen and VR Clinical Psychology</a>.<br>Code and development: <a href="https://www.openworks.co.za/">OpenWorks IT</a>.</p>
+    </div>
+    <nav class="footer-col" aria-label="Steady">
+      <h2>Steady</h2>
+      <ul>
+        {{- range site.Menus.main }}<li><a href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Patients">
+      <h2>Patients</h2>
+      <ul>
+        <li><a href="/patients/#get-the-app">Get the app</a></li>
+        <li><a href="/patients/#delete">Delete your account</a></li>
+        <li><a href="{{ site.Params.privacyPolicy }}">Privacy policy</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Project">
+      <h2>Open source</h2>
+      <ul>
+        <li><a href="{{ site.Params.source }}">Source code on GitHub</a></li>
+        <li><a href="/security/#report">Report a security problem</a></li>
+        <li><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer-crisis">
+    <p><strong>Steady isn't an emergency service</strong> and nobody watches it around the clock. If you need help now, call SADAG on <a href="tel:0800567567">0800 567 567</a> (free, 24 hours) or <a href="tel:112">112</a> from a mobile phone.</p>
+    <p class="footer-small">© {{ now.Year }} OpenWorks IT (Pty) Ltd. Steady is free software under the GNU AGPL v3.</p>
+  </div>
+</footer>

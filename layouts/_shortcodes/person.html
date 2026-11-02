@@ -1,0 +1,8 @@
+{{- /* {{< person name="..." role="..." photo="/img/..." >}}Bio in Markdown{{< /person >}} */ -}}
+<div class="person">
+  <img src="{{ .Get "photo" }}" alt="{{ .Get "name" }}" width="240" height="240" loading="lazy">
+  <div>
+    <p><strong>{{ .Get "name" }}</strong>, {{ .Get "role" }}</p>
+    {{ .Inner | .Page.RenderString (dict "display" "block") }}
+  </div>
+</div>

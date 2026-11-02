@@ -1,0 +1,5 @@
+{{- /* {{< phone src="01-check-in" alt="..." caption="..." >}} : a screenshot in a phone outline */ -}}
+<figure class="phone {{ .Get "class" }}">
+  <img src="/img/screens/{{ .Get "src" }}.webp" alt="{{ .Get "alt" }}" width="560" height="1217" loading="lazy">
+  {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
