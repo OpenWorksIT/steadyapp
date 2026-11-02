@@ -15,8 +15,9 @@ Under POPIA, **the practice** is the *responsible party*: it decides how its pat
 | Who | What they see |
 |---|---|
 | A patient | Only their own check-ins, answers and exercises. Not their scores, which go to their psychologist. |
-| A psychologist | Only their own patients. Every time they open a patient's information, it's written to an access log. |
-| The master psychologist | Their own patients, plus the practice's settings and updates. They can carry out account deletions patients have asked for. |
+| A psychologist | Only their own patients, and a patient a colleague has shared with them, for example while that colleague is away (read only; the patient can see who in the app). Every time they open a patient's information, it's written to an access log. |
+| The master psychologist | Their own patients' information. For every patient, only whether their app is set up and connected. They manage staff accounts and the practice's updates, read the access log, and can carry out account deletions patients have asked for. |
+| The practice administrator | Patients' names and whether each one's app is set up and connected, never what they shared. They send invites, reset passwords, stop accounts and read the access log. |
 | OpenWorks IT | Runs the server, so it can technically reach it, as any hosting company can. It uses that access only to keep the server running and to fix problems. |
 
 ## Signing in

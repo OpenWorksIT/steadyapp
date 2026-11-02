@@ -44,7 +44,7 @@ Each practice gets its own Steady server, hosted in South Africa:
 - **Two-step sign-in** for psychologists and administrators, from devices you've linked.
 - **An access log** of every time a patient's information is opened.
 - **Encrypted backups** every night.
-- **Updates you approve.** New versions arrive only when OpenWorks IT has signed them, and the master psychologist can install them from the app.
+- **Signed updates.** A new version installs on your server only if OpenWorks IT has signed it. The master psychologist can install updates from the app.
 
 [Privacy and security in detail](/security/).
 
