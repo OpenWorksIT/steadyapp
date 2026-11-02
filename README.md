@@ -5,7 +5,7 @@ The website for [Steady](https://github.com/OpenWorksIT/steady), check-ins betwe
 - **Science and research:** Kempie van Rooyen and VR Clinical Psychology.
 - **Code and development:** OpenWorks IT.
 
-A [Hugo](https://gohugo.io) site with its own templates (no theme), no JavaScript, no trackers. Hosted on Vercel, which builds every push to `main`.
+A [Hugo](https://gohugo.io) site with its own templates (no theme), no JavaScript, no trackers. Hosted on GitHub Pages: `.github/workflows/pages.yml` builds and publishes every push to `main`.
 
 ## Editing
 
@@ -27,7 +27,7 @@ The privacy policy stays at [openworks.co.za/steady/privacy](https://www.openwor
 hugo server     # http://localhost:1313
 ```
 
-Needs Hugo 0.146 or newer (extended not required). On Vercel, set the project's `HUGO_VERSION` environment variable to the version you use locally.
+Needs Hugo 0.146 or newer (extended not required). The workflow pins the version it builds with (`HUGO_VERSION`).
 
 ## Licence
 
