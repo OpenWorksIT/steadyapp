@@ -45,4 +45,4 @@ Kempie, as the community's lead, holds the administrator role. Like any hosting 
 
 Psychologists at practices that use Steady, invited by the community's lead. Access is included in every practice's monthly fee. Psychologists who run Steady on their own servers can join for a separate fee.
 
-The forum lives at community.steadyapp.co.za and opens to member practices soon.
+The forum is open to member practices. Psychologists reach it from the Community tab in Steady, already signed in.
