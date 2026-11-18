@@ -11,9 +11,10 @@ enableRobotsTXT = true
   whatsappLabel = "+27 76 768 9155"
   source = "https://github.com/OpenWorksIT/steady"
   privacyPolicy = "https://www.openworks.co.za/steady/privacy/"
-  # fill in once the stores have approved Steady; the patients page shows the buttons then
-  appStore = ""
-  googlePlay = ""
+  # the patients page shows a button for each (live since 16 Nov 2026; the App Store lists
+  # Steady in South Africa, so the link names the za store)
+  appStore = "https://apps.apple.com/za/app/steady-check-in/id6827262084"
+  googlePlay = "https://play.google.com/store/apps/details?id=za.co.openworks.steady"
 
 [[menus.main]]
   name = "For practices"
