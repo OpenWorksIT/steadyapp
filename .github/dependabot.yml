@@ -1,0 +1,6 @@
+# Weekly pull requests when the actions that build and publish the site have updates.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly }
