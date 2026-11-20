@@ -17,7 +17,7 @@ A [Hugo](https://gohugo.io) site with its own templates (no theme), no JavaScrip
 | The home page's fortnight line | `tools/fortnight.py` (writes `layouts/_partials/fortnight.html`) |
 | App screenshots | `static/img/screens/` (fictional practice and patients only) |
 
-When Apple and Google approve Steady, put the store links in `hugo.toml` (`appStore`, `googlePlay`); the patients page shows the buttons then.
+The store links are in `hugo.toml` (`appStore`, `googlePlay`); the patients page shows a button for each. What the site says about Steady follows the Steady repository's README and docs (`docs/VERSIONS.md` has what changed in each version): check the pages against them after a release that changes what practices, patients or the community see.
 
 The privacy policy stays at [openworks.co.za/steady/privacy](https://www.openworks.co.za/steady/privacy/), which the app stores link to.
 

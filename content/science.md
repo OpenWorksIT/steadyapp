@@ -40,11 +40,19 @@ Steady highlights a few things for the psychologist to look at:
 - scores in the higher bands
 - a run of missed check-ins
 
-They're review aids. Steady doesn't calculate risk, doesn't diagnose, and doesn't alert anyone outside office hours. The psychologist decides what a flag means and marks it as reviewed.
+They're review aids. Steady doesn't calculate risk, doesn't diagnose, and doesn't alert anyone outside office hours. It isn't a medical device: it doesn't diagnose, treat, cure or prevent any condition. The psychologist decides what a flag means and marks it as reviewed.
 
 ## Watch data
 
-If a patient chooses to share it, Steady shows a daily summary from their watch or phone: resting heart rate, sleep, steps and blood oxygen. Each is shown against the patient's own usual range rather than a population norm, because what's normal for one person isn't for another. There are no alerts. It's context for a conversation, and the start of a baseline for research that practices may do later, only with patients' consent.
+If a patient chooses to share it, Steady shows a daily summary from their watch or phone: resting heart rate, sleep, steps and blood oxygen. Each is shown against the patient's own usual range rather than a population norm, because what's normal for one person isn't for another. The patient sees the same daily charts as their psychologist. Steady measures nothing itself, and there are no alerts. It's context for a conversation, and, with patients' consent, the start of a baseline for research that practices may do later.
+
+## RADR: each patient against their own normal {#radr}
+
+RADR (Research Amon Dîn Rating) is a view in the psychologist's app. Day by day, it shows how far a patient's watch data and check-ins are from that person's own normal, in four areas (sleep, the body clock, activity and the heart), and whether the watch and the check-ins move together. Every number opens one tap down to what it's made of, and anything RADR highlights, the psychologist marks as reviewed, like any other flag.
+
+It's built on what the research reports. Single watch measures say little about depression on their own, while combinations, compared with a person's own history, do better ([Rykov and colleagues, 2021](https://mhealth.jmir.org/2021/10/e24872); [Lim and colleagues, 2024](https://doi.org/10.1038/s41746-024-01333-z)). So RADR combines several measures, compares each person only with themselves, and keeps their own check-ins beside the watch.
+
+**RADR isn't a risk score, a prediction or a diagnosis**, and nothing is triggered by it. In the psychologist's list it only orders patients, always below answers waiting for review, such as PHQ-9 item 9. Kempie van Rooyen approved RADR for use in care, and patients agree separately before any watch data is shared.
 
 ## Who signs off
 
@@ -52,4 +60,4 @@ If a patient chooses to share it, Steady shows a daily summary from their watch 
 Kempie has worked as a clinician for 18 years, as an academic psychologist and in the public service before private practice. His clinical and research interests are traumatic stress, burnout and adult personality. He leads the clinical side of Steady and its community of psychologists.
 {{< /person >}}
 
-Kempie and VR Clinical Psychology sign off every clinical decision in Steady: which questionnaires ship, how they're scored, what's flagged, and every word patients read about their care and their safety. OpenWorks IT writes the code and develops Steady to match.
+Kempie and VR Clinical Psychology sign off every clinical decision in Steady: which questionnaires ship, how they're scored, what's flagged, the watch measures and RADR, and every word patients read about their care and their safety. OpenWorks IT writes the code and develops Steady to match.
