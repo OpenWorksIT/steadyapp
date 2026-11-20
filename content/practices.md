@@ -6,7 +6,7 @@ lead: "Steady gives you a view of the days between sessions without adding to yo
 
 ## What you see
 
-Your home screen is your patient list. Patients with something worth a look come first: an unreviewed flag, a missed run of check-ins, or a finished questionnaire. Open a patient and you see their last fortnight as a line, their own words from each check-in, their questionnaire scores over time and, if they've chosen to share it, a daily summary from their watch.
+Your home screen is your patient list. Patients with something worth a look come first: an unreviewed flag, a missed run of check-ins, or a finished questionnaire. Open a patient and you see their last fortnight as a line, their own words from each check-in, their questionnaire scores over time and, if they've chosen to share it, a daily summary from their watch. RADR shows how far a patient's watch data and check-ins are from that person's own normal, with every number explained. [More on RADR](/science/#radr).
 
 {{< phones >}}
 {{< phone src="07-patient-page" alt="A patient's page: flags to review, the last 14 days of mood and anxiety, and a week of watch data against the patient's usual range" caption="One patient's fortnight" >}}
@@ -34,7 +34,7 @@ You get a notification when a patient checks in or finishes something you sent. 
 
 ## Exports for the clinical file
 
-Export a patient's report, with charts, to PDF, or one or all of your patients to Excel. The clinical record stays yours. Steady is a between-session tool, not your file.
+Export a patient's report, with charts, to PDF, or one or all of your patients to Excel. For AI note-taking tools there's a plain-text PDF with only what's new since the last one, so each file adds to the record without repeating it. Every export says how it was made and whether each flag was reviewed. The clinical record stays yours. Steady is a between-session tool, not your file.
 
 ## Your server
 
@@ -42,9 +42,11 @@ Each practice gets its own Steady server, hosted in South Africa:
 
 - **Your name and logo** in the app your patients use, and your own web address, such as `yourpractice.steadyapp.co.za` or one on your own domain.
 - **Two-step sign-in** for psychologists and administrators, from devices you've linked.
-- **An access log** of every time a patient's information is opened.
-- **Encrypted backups** every night.
+- **An access log** of every time a patient's information is opened. The master psychologist and the practice administrator read it in the app.
+- **Encrypted backups** every night, kept in South Africa.
 - **Signed updates.** A new version installs on your server only if OpenWorks IT has signed it. The master psychologist can install updates from the app.
+- **Watched over.** Your server checks its own security and privacy every six hours. OpenWorks IT sees the results with each server's version, health and backups, never anything about patients.
+- **An operator agreement** with OpenWorks IT, as POPIA requires, which the master psychologist signs in the app.
 
 [Privacy and security in detail](/security/).
 
@@ -52,7 +54,7 @@ Each practice gets its own Steady server, hosted in South Africa:
 
 OpenWorks IT sets up your server, trains you and your colleagues, answers questions, and keeps Steady up to date. Changes that practices ask for go into Steady for everyone.
 
-Every practice also joins the Steady community: a private forum of psychologists, invitation only and with two-step sign-in, to talk about the science, build questionnaires together, plan studies across practices and shape what Steady does next. No patient information is ever posted there. [About the community](/community/).
+Every practice also joins the Steady community: a private forum of psychologists, opened from the Community tab in Steady with Steady's own sign-in, to talk about the science, build questionnaires together, plan studies across practices and shape what Steady does next. The Steady manual is there too, for your psychologists and your practice administrator. No patient information is ever posted there. [About the community](/community/).
 
 ## What it costs
 
@@ -75,6 +77,8 @@ There are two published plans, one for a solo psychologist and one for a practic
 **Do patients pay?** No. The app is free in the App Store and on Google Play.
 
 **Which phones does it work on?** iPhones and Android phones. Watch data comes from Apple Health on iPhone and Health Connect on Android.
+
+**Can I use it on a computer?** Yes. Psychologists and administrators can use Steady in a browser as well as on their phones, and patients without a phone can check in from a computer.
 
 **Is it a chat app?** No. Patients can't message you through Steady, which keeps it from becoming an after-hours channel.
 

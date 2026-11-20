@@ -22,7 +22,7 @@ The partnership is simple. **VR Clinical Psychology** decides the clinical side:
 
 That split matters. The people who sit with patients decide what's good for them, and the people who write the code make it work, safely, every day.
 
-Steady went through two rounds of testing with the practice before going to the App Store and Google Play.
+Steady went through two rounds of testing with the practice before going live at VR Clinical Psychology at the end of October 2026, and onto the App Store and Google Play in November. The community of psychologists opened inside the app the same month.
 
 ## Why it's open source
 
@@ -36,8 +36,8 @@ We earn our keep by hosting Steady, supporting the practices that use it, and de
 
 ## What's next
 
-- **The [community](/community/).** A private forum where psychologists who use Steady can discuss the science, build questionnaires together and plan studies across practices. Only totals ever leave a practice, never individual records.
-- **More practices.** Each one on its own server, with its own name and logo.
+- **More practices.** Each one on its own server, with its own name and logo, and its psychologists in the [community](/community/).
+- **Studies across practices**, planned in the community. Only totals ever leave a practice, never individual records.
 - **Research, carefully.** With patients' consent, watch data and check-ins can become a baseline for understanding how people do between sessions.
 
 ## Credits {#credits}
