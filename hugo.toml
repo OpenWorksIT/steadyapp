@@ -5,7 +5,7 @@ disableKinds = ["taxonomy", "term", "rss"]
 enableRobotsTXT = true
 
 [params]
-  description = "Steady is a calm app for the days between therapy sessions. Patients check in; their psychologist sees how the fortnight went. Built in South Africa, open source, on your practice's own server."
+  description = "Steady is a calm app for the days between sessions, for mental healthcare practices. Patients check in; their clinician sees how the fortnight went. Built in South Africa, open source, on your practice's own server."
   email = "info@openworks.co.za"
   whatsapp = "https://wa.me/27767689155"
   whatsappLabel = "+27 76 768 9155"
