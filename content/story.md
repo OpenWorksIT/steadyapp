@@ -1,18 +1,18 @@
 ---
 title: "Our story"
 description: "How a psychology practice in Gqeberha and a small open-source software company built Steady together."
-lead: "Steady was built by a psychology practice and a software company in Gqeberha, for a question every psychologist has: how has this person really been since I last saw them?"
+lead: "Steady was built by a psychology practice and a software company in Gqeberha, for a question every clinician has: how has this person really been since I last saw them?"
 ---
 
 ## The question
 
-At VR Clinical Psychology, sessions were weekly or fortnightly, but the days in between were mostly guesswork. Patients arrive and try to sum up two weeks in a few sentences. The good days blur, the last bad one looms large, and the psychologist has to work from that.
+At VR Clinical Psychology, sessions were weekly or fortnightly, but the days in between were mostly guesswork. Patients arrive and try to sum up two weeks in a few sentences. The good days blur, the last bad one looms large, and the clinician has to work from that.
 
-The practice wanted something simple: patients say how they are while it's happening, do the questionnaires and exercises they've been given, and the psychologist sees it before the next session. Without making therapy feel like data entry, and without anyone's information leaving the practice's hands.
+The practice wanted something simple: patients say how they are while it's happening, do the questionnaires and exercises they've been given, and the clinician sees it before the next session. Without making therapy feel like data entry, and without anyone's information leaving the practice's hands.
 
 ## The first attempt
 
-We started by running an existing open-source research platform for the practice. It could do a great deal, but it was built for large research studies, not a practice of three psychologists, and keeping it running took more than it gave back.
+We started by running an existing open-source research platform for the practice. It could do a great deal, but it was built for large research studies, not a practice of three clinicians, and keeping it running took more than it gave back.
 
 So in 2026 we started again with something small, and called it Steady.
 
@@ -22,7 +22,7 @@ The partnership is simple. **VR Clinical Psychology** decides the clinical side:
 
 That split matters. The people who sit with patients decide what's good for them, and the people who write the code make it work, safely, every day.
 
-Steady went through two rounds of testing with the practice before going live at VR Clinical Psychology at the end of October 2026, and onto the App Store and Google Play in November. The community of psychologists opened inside the app the same month.
+Steady went through two rounds of testing with the practice before going live at VR Clinical Psychology at the end of October 2026, and onto the App Store and Google Play in November. The community of clinicians opened inside the app the same month.
 
 ## Why it's open source
 
@@ -36,7 +36,7 @@ We earn our keep by hosting Steady, supporting the practices that use it, and de
 
 ## What's next
 
-- **More practices.** Each one on its own server, with its own name and logo, and its psychologists in the [community](/community/).
+- **More practices.** Each one on its own server, with its own name and logo, and its clinicians in the [community](/community/).
 - **Studies across practices**, planned in the community. Only totals ever leave a practice, never individual records.
 - **Research, carefully.** With patients' consent, watch data and check-ins can become a baseline for understanding how people do between sessions.
 

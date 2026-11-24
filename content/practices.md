@@ -1,6 +1,6 @@
 ---
 title: "For practices"
-description: "What a psychology practice gets with Steady: check-ins between sessions, questionnaires and exercises, its own server in South Africa, and support from OpenWorks IT."
+description: "What a mental healthcare practice gets with Steady: check-ins between sessions, questionnaires and exercises, its own server in South Africa, and support from OpenWorks IT."
 lead: "Steady gives you a view of the days between sessions without adding to your admin. Here's what you get, what it costs, and how to start."
 ---
 
@@ -41,12 +41,12 @@ Export a patient's report, with charts, to PDF, or one or all of your patients t
 Each practice gets its own Steady server, hosted in South Africa:
 
 - **Your name and logo** in the app your patients use, and your own web address, such as `yourpractice.steadyapp.co.za` or one on your own domain.
-- **Two-step sign-in** for psychologists and administrators, from devices you've linked.
-- **An access log** of every time a patient's information is opened. The master psychologist and the practice administrator read it in the app.
+- **Two-step sign-in** for clinicians and administrators, from devices you've linked.
+- **An access log** of every time a patient's information is opened. The master clinician and the practice administrator read it in the app.
 - **Encrypted backups** every night, kept in South Africa.
-- **Signed updates.** A new version installs on your server only if OpenWorks IT has signed it. The master psychologist can install updates from the app.
+- **Signed updates.** A new version installs on your server only if OpenWorks IT has signed it. The master clinician can install updates from the app.
 - **Watched over.** Your server checks its own security and privacy every six hours. OpenWorks IT sees the results with each server's version, health and backups, never anything about patients.
-- **An operator agreement** with OpenWorks IT, as POPIA requires, which the master psychologist signs in the app.
+- **An operator agreement** with OpenWorks IT, as POPIA requires, which the master clinician signs in the app.
 
 [Privacy and security in detail](/security/).
 
@@ -54,16 +54,16 @@ Each practice gets its own Steady server, hosted in South Africa:
 
 OpenWorks IT sets up your server, trains you and your colleagues, answers questions, and keeps Steady up to date. Changes that practices ask for go into Steady for everyone.
 
-Every practice also joins the Steady community: a private forum of psychologists, opened from the Community tab in Steady with Steady's own sign-in, to talk about the science, build questionnaires together, plan studies across practices and shape what Steady does next. The Steady manual is there too, for your psychologists and your practice administrator. No patient information is ever posted there. [About the community](/community/).
+Every practice also joins the Steady community: a private forum of clinicians, opened from the Community tab in Steady with Steady's own sign-in, to talk about the science, build questionnaires together, plan studies across practices and shape what Steady does next. The Steady manual is there too, for your clinicians and your practice administrator. No patient information is ever posted there. [About the community](/community/).
 
 ## What it costs
 
 There are no licence fees: Steady is free, open-source software. You pay OpenWorks IT:
 
 - **A once-off onboarding fee** to set up your server, branding and accounts, and train your team.
-- **One monthly fee** for hosting, updates, support, training and the forum. Not per patient, and not per psychologist.
+- **One monthly fee** for hosting, updates, support, training and the forum. Not per patient, and not per clinician.
 
-There are two published plans, one for a solo psychologist and one for a practice of up to three, and a quote for larger practices. [Ask us for current prices](mailto:info@openworks.co.za?subject=Steady%20prices). Patients never pay anything.
+There are two published plans, one for a solo clinician and one for a practice of up to three, and a quote for larger practices. [Ask us for current prices](mailto:info@openworks.co.za?subject=Steady%20prices). Patients never pay anything.
 
 ## Getting started
 
@@ -78,7 +78,7 @@ There are two published plans, one for a solo psychologist and one for a practic
 
 **Which phones does it work on?** iPhones and Android phones. Watch data comes from Apple Health on iPhone and Health Connect on Android.
 
-**Can I use it on a computer?** Yes. Psychologists and administrators can use Steady in a browser as well as on their phones, and patients without a phone can check in from a computer.
+**Can I use it on a computer?** Yes. Clinicians and administrators can use Steady in a browser as well as on their phones, and patients without a phone can check in from a computer.
 
 **Is it a chat app?** No. Patients can't message you through Steady, which keeps it from becoming an after-hours channel.
 
@@ -86,4 +86,4 @@ There are two published plans, one for a solo psychologist and one for a practic
 
 **Can we host it ourselves?** Yes. The code and the setup guide are on [GitHub](https://github.com/OpenWorksIT/steady) under the GNU AGPL. Most practices would rather we did it.
 
-**Does it work for psychiatrists?** It's built for psychologists, but nothing in it stops a psychiatrist using it, and a longer list of patients seen less often is where between-visit check-ins may help most. Talk to us.
+**Who is it for?** Anyone in mental healthcare who sees people between sessions: psychologists, psychiatrists, counsellors, social workers, mental health nurses and occupational therapists. Steady calls them all clinicians. For a psychiatrist with a longer list of patients seen less often, between-visit check-ins may help most. Talk to us.
