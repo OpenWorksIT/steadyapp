@@ -19,6 +19,7 @@
   <link rel="preload" href="/fonts/barlow-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
   {{- $css := slice (resources.Get "css/site.css") (resources.Get "css/fortnight.css") | resources.Concat "css/steady.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{- block "head" . }}{{ end }}
 </head>
 <body class="{{ if .IsHome }}is-home{{ else }}is-{{ .File.ContentBaseName }}{{ end }}">
   <a class="skip" href="#main">Skip to content</a>

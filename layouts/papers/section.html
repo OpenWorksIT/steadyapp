@@ -1,0 +1,37 @@
+{{ define "main" }}
+<article class="page papers">
+  <header class="page-head wrap">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.lead }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+  <div class="wrap page-grid">
+    <div class="prose">
+      {{- $papers := .RegularPages.ByDate.Reverse }}
+      {{- if $papers }}
+      <ol class="paper-list" reversed>
+        {{- range $papers }}
+        <li class="paper-item">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p class="paper-byline">{{ partial "paper-authors.html" . }}</p>
+          <p class="paper-when">{{ .Date.Format "2 January 2006" }}{{ with .Params.version }}, version {{ . }}{{ end }}{{ with .Params.doi }}. DOI <a href="https://doi.org/{{ . }}">{{ . }}</a>{{ end }}</p>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        </li>
+        {{- end }}
+      </ol>
+      {{- else }}
+      <p class="paper-empty">No papers yet: the first are being discussed in the community.</p>
+      {{- end }}
+      {{ .Content }}
+    </div>
+    <aside class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ul>
+        {{- range $h := .Fragments.Headings }}
+        {{- if eq $h.Level 2 }}<li><a href="#{{ $h.ID }}">{{ $h.Title | plainify | htmlUnescape }}</a></li>{{ end }}
+        {{- range $h.Headings }}{{ if eq .Level 2 }}<li><a href="#{{ .ID }}">{{ .Title | plainify | htmlUnescape }}</a></li>{{ end }}{{ end }}
+        {{- end }}
+      </ul>
+    </aside>
+  </div>
+</article>
+{{ end }}

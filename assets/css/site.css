@@ -357,3 +357,29 @@ h3 { font-weight: 500; font-size: var(--step-1); line-height: 1.25; }
   .prose .phone-row .phone img { border-radius: 1rem; }
   .prose .phone-row .phone figcaption { font-size: 0.75rem; }
 }
+
+/* papers: the list, and a paper's page */
+.paper-list { list-style: none; padding: 0 !important; margin: 0 0 1rem !important; max-width: var(--measure); }
+.paper-item { padding: 0 0 2rem; margin: 0 0 2rem !important; border-bottom: 1px solid var(--line); }
+.prose .paper-item h2 { margin: 0 0 0.5rem; padding: 0; border: 0; font-size: var(--step-1); font-weight: 500; max-width: none; }
+.paper-item h2 a { color: var(--ink); text-decoration: none; }
+.paper-item h2 a:hover { color: var(--teal-ink); text-decoration: underline; }
+.paper-byline { margin: 0 0 0.35rem; color: var(--ink); }
+.paper-when { font-size: var(--step--1); color: var(--ink-2); }
+.paper-affiliation { color: var(--ink-2); }
+.orcid { font-size: 0.75em; font-weight: 600; letter-spacing: 0.02em; color: var(--teal-ink); }
+.paper-empty { font-size: var(--step-1); color: var(--ink-2); margin-bottom: 1rem; }
+.paper-back { margin: 0 0 1.25rem; font-size: var(--step--1); }
+.paper .page-head h1 { max-width: 24ch; font-size: clamp(2.1rem, 1.5rem + 2.6vw, 3.5rem); line-height: 1.1; }
+.paper .paper-byline { margin-top: 1.25rem; font-size: var(--step-1); }
+.paper-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1rem 2rem; margin: 1.75rem 0; max-width: 52rem; font-size: var(--step--1); }
+.paper-facts dt { font: 500 var(--step--1)/1.3 var(--display); color: var(--ink-2); }
+.paper-facts dd { margin: 0.2rem 0 0; overflow-wrap: anywhere; }
+.paper-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.button-outline { background: transparent; color: var(--tide); }
+.button-outline:hover { background: var(--mist); color: var(--tide-deep); border-color: var(--tide-deep); }
+.prose pre.cite { max-width: var(--measure); margin: 0 0 1.5rem; padding: 1rem 1.25rem; border-radius: 0.75rem; background: var(--white); border: 1px solid var(--line);
+  font: 400 0.875rem/1.55 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.prose .cite-label { margin-bottom: 0.4rem; font: 500 var(--step--1)/1.3 var(--display); color: var(--ink-2); }
+.paper .note { margin-top: 2rem; }
+.paper-item:last-child { border-bottom: 0; margin-bottom: 0 !important; }
