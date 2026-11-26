@@ -33,6 +33,10 @@ enableRobotsTXT = true
   pageRef = "/community"
   weight = 35
 [[menus.main]]
+  name = "Papers"
+  pageRef = "/papers"
+  weight = 37
+[[menus.main]]
   name = "Privacy and security"
   pageRef = "/security"
   weight = 40
