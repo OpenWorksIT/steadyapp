@@ -40,7 +40,7 @@ Export a patient's report, with charts, to PDF, or one or all of your patients t
 
 Each practice gets its own Steady server, hosted in South Africa:
 
-- **Your name and logo** in the app your patients use, and your own web address, such as `yourpractice.steadyapp.co.za` or one on your own domain.
+- **Your name and logo** in the app your patients use, and your own address on steadyapp.co.za, such as `yourpractice.steadyapp.co.za`.
 - **Two-step sign-in** for clinicians and administrators, from devices you've linked.
 - **An access log** of every time a patient's information is opened. The master clinician and the practice administrator read it in the app.
 - **Encrypted backups** every night, kept in South Africa.
@@ -82,7 +82,7 @@ There are two published plans, one for a solo clinician and one for a practice o
 
 **Is it a chat app?** No. Patients can't message you through Steady, which keeps it from becoming an after-hours channel.
 
-**Can I use my own domain?** Yes. Or use an address under steadyapp.co.za if you don't have one.
+**Can I use my own domain?** No. Every practice's Steady has its own address on steadyapp.co.za, such as `yourpractice.steadyapp.co.za`: the community forum opens inside Steady only from those addresses, and we look after them, certificates and all. Your own website can link to yours.
 
 **Can we host it ourselves?** Yes. The code and the setup guide are on [GitHub](https://github.com/OpenWorksIT/steady) under the GNU AGPL. Most practices would rather we did it.
 
