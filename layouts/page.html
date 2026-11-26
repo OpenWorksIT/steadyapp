@@ -13,8 +13,8 @@
       <h2>On this page</h2>
       <ul>
         {{- range $h := .Fragments.Headings }}
-        {{- if eq $h.Level 2 }}<li><a href="#{{ $h.ID }}">{{ $h.Title | plainify }}</a></li>{{ end }}
-        {{- range $h.Headings }}{{ if eq .Level 2 }}<li><a href="#{{ .ID }}">{{ .Title | plainify }}</a></li>{{ end }}{{ end }}
+        {{- if eq $h.Level 2 }}<li><a href="#{{ $h.ID }}">{{ $h.Title | plainify | htmlUnescape }}</a></li>{{ end }}
+        {{- range $h.Headings }}{{ if eq .Level 2 }}<li><a href="#{{ .ID }}">{{ .Title | plainify | htmlUnescape }}</a></li>{{ end }}{{ end }}
         {{- end }}
       </ul>
     </aside>

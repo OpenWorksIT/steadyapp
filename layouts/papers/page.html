@@ -1,0 +1,83 @@
+{{- /*
+  A paper: content/papers/<slug>/index.md, its PDF beside it. Front matter: title, description
+  (a sentence or two), date, version, authors [{given, family, affiliation, orcid}], abstract,
+  doi, zenodo (the record's address), pdf (file name), discussed (when, in the community),
+  keywords. README.md, "Publishing a paper", has the steps.
+*/ -}}
+{{ define "head" }}
+  {{- /* what Google Scholar and reference managers read */}}
+  <meta name="citation_title" content="{{ .Title }}">
+  {{- range .Params.authors }}
+  <meta name="citation_author" content="{{ .family }}, {{ .given }}">
+  {{- with .affiliation }}<meta name="citation_author_institution" content="{{ . }}">{{ end }}
+  {{- with .orcid }}<meta name="citation_author_orcid" content="https://orcid.org/{{ . }}">{{ end }}
+  {{- end }}
+  <meta name="citation_publication_date" content="{{ .Date.Format "2006/01/02" }}">
+  <meta name="citation_publisher" content="{{ if .Params.doi }}Zenodo{{ else }}Steady Community{{ end }}">
+  <meta name="citation_language" content="en">
+  {{- with .Params.doi }}<meta name="citation_doi" content="{{ . }}">{{ end }}
+  {{- with .Params.pdf }}{{ with $.Resources.Get . }}<meta name="citation_pdf_url" content="{{ .Permalink }}">{{ end }}{{ end }}
+  <meta name="citation_abstract_html_url" content="{{ .Permalink }}">
+  {{- with .Params.keywords }}<meta name="citation_keywords" content="{{ delimit . "; " }}">{{ end }}
+  <meta name="dc.rights" content="https://creativecommons.org/licenses/by/4.0/">
+{{ end }}
+{{ define "main" }}
+{{- $pdf := "" }}{{ with .Params.pdf }}{{ with $.Resources.Get . }}{{ $pdf = . }}{{ end }}{{ end }}
+{{- $year := .Date.Format "2006" }}
+<article class="page paper">
+  <header class="page-head wrap">
+    <p class="paper-back"><a href="/papers/">Papers</a></p>
+    <h1>{{ .Title }}</h1>
+    <p class="paper-byline">{{ partial "paper-authors.html" . }}</p>
+    <dl class="paper-facts">
+      <div><dt>Published</dt><dd>{{ .Date.Format "2 January 2006" }}{{ with .Params.version }}, version {{ . }}{{ end }}</dd></div>
+      {{- with .Params.doi }}<div><dt>DOI</dt><dd><a href="https://doi.org/{{ . }}">{{ . }}</a></dd></div>{{ end }}
+      <div><dt>Licence</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></dd></div>
+      {{- with .Params.discussed }}<div><dt>Discussed</dt><dd>In the Steady Community, {{ . }}</dd></div>{{ end }}
+    </dl>
+    <p class="paper-actions">
+      {{- with $pdf }}<a class="button" href="{{ .RelPermalink }}">Download the PDF</a>{{ end }}
+      {{- with .Params.zenodo }}<a class="button button-outline" href="{{ . }}">See it on Zenodo</a>{{ end }}
+      <a class="button button-outline" href="#cite">Cite it</a>
+    </p>
+  </header>
+  <div class="wrap page-grid">
+    <div class="prose">
+      {{- with .Params.abstract }}
+      <h2 id="abstract">Abstract</h2>
+      {{ . | markdownify }}
+      {{- end }}
+      {{ .Content }}
+      <h2 id="cite">Cite this paper</h2>
+      {{- $authorsApa := slice }}{{ range .Params.authors }}{{ $authorsApa = $authorsApa | append (printf "%s, %s." .family (substr .given 0 1)) }}{{ end }}
+      {{- $authorsBib := slice }}{{ range .Params.authors }}{{ $authorsBib = $authorsBib | append (printf "%s, %s" .family .given) }}{{ end }}
+      {{- $first := index .Params.authors 0 }}
+      {{- $key := printf "%s%s%s" (replaceRE "[^A-Za-z]" "" $first.family) $year (index (split .File.ContentBaseName "-") 0) | lower }}
+      <p class="cite-label">APA</p>
+      <pre class="cite">{{ delimit $authorsApa ", " ", & " }} ({{ $year }}). {{ .Title }}{{ with .Params.version }} (Version {{ . }}){{ end }}. {{ with .Params.doi }}Zenodo. https://doi.org/{{ . }}{{ else }}Steady Community. {{ $.Permalink }}{{ end }}</pre>
+      <p class="cite-label">BibTeX</p>
+      <pre class="cite">@misc{ {{- $key }},
+  author    = { {{- delimit $authorsBib " and " }}},
+  title     = {{ print "{{" .Title "}}" }},
+  year      = { {{- $year }}},
+  publisher = {Zenodo},{{ with .Params.version }}
+  version   = { {{- . }}},{{ end }}{{ with .Params.doi }}
+  doi       = { {{- . }}},{{ end }}
+  url       = { {{- with .Params.doi }}https://doi.org/{{ . }}{{ else }}{{ $.Permalink }}{{ end }}}
+}</pre>
+      <p class="note">Discussed by clinicians in the Steady Community before it was published. That is not journal peer review: read it as you would a preprint. <a href="/papers/#how-a-paper-gets-here">How papers get here</a>.</p>
+    </div>
+    <aside class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ul>
+        {{- with .Params.abstract }}<li><a href="#abstract">Abstract</a></li>{{ end }}
+        {{- range $h := .Fragments.Headings }}
+        {{- if eq $h.Level 2 }}<li><a href="#{{ $h.ID }}">{{ $h.Title | plainify | htmlUnescape }}</a></li>{{ end }}
+        {{- range $h.Headings }}{{ if eq .Level 2 }}<li><a href="#{{ .ID }}">{{ .Title | plainify | htmlUnescape }}</a></li>{{ end }}{{ end }}
+        {{- end }}
+        <li><a href="#cite">Cite this paper</a></li>
+      </ul>
+    </aside>
+  </div>
+</article>
+{{ end }}

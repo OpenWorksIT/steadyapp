@@ -23,6 +23,10 @@ It opened in November 2026 with VR Clinical Psychology's clinicians, and grows w
 - **The tea room**, for introductions, and the work and life around it.
 - **A private space per practice**, if a practice wants one, for its own clinicians only.
 
+## Papers
+
+What the community writes up is published for everyone on [Papers](/papers/): discussed by clinicians in the forum first, then given a permanent DOI on Zenodo, free to read, share and build on under CC BY 4.0.
+
 ## Studies across practices
 
 When practices run a study together, each one keeps its patients' information on its own server. Only totals and averages are shared, never individual records, and only from patients who have agreed to take part.
