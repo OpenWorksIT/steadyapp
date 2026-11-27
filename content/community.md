@@ -42,9 +42,13 @@ These hold for everyone, the administrators included.
 
 If something slips through, an administrator deletes it for good, edit history included.
 
-## What OpenWorks IT sees
+## Who from OpenWorks IT is there
 
-OpenWorks IT hosts the forum, so we've been careful about our own access. Our accounts see four areas only: **Announcements**, **the Steady manual**, **the science** and **Steady development**. In the clinical areas, the tea room and any practice's own space we see only numbers, such as how many members, topics and posts there are, so we know the community is healthy. We never see their titles, posts or who wrote what.
+**Tiaan van der Merwe**, who builds Steady, is a member of the community by name. He reads and posts wherever clinicians do, the clinical areas and the tea room included, so he can help with support and development where the questions actually come up. "OpenWorks IT" shows beside his name. A practice's own space stays that practice's alone.
+
+That access is his, not the company's. Any other OpenWorks IT account sees four areas only: **Announcements**, **the Steady manual**, **the science** and **Steady development**. Everywhere else it sees only numbers, such as how many members, topics and posts there are, never titles, posts or who wrote what.
+
+Patients stay anonymous here for everyone who reads it, Tiaan included: rule 3 keeps patient-identifying information out, and Steady itself never sends the community anything about patients.
 
 Kempie, as the community's lead, holds the administrator role. Like any hosting company, OpenWorks IT can technically reach the server it runs; we use that access only to keep the forum running.
 
